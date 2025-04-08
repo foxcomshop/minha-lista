@@ -1,0 +1,60 @@
+/* Estilo geral do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Estilo do input */
+  input#novoItem {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+  
+  /* Estilo dos botões */
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Estilo EXCLUSIVO para a lista */
+  ul#lista {
+    list-style: none;        /* remove as bolinhas */
+    padding: 0;
+    margin-top: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  ul#lista li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  ul#lista li:last-child {
+    border-bottom: none;
+  }
+  
