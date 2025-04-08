@@ -1,10 +1,52 @@
 /* Estilo geral do body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
-    padding: 40px;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
     text-align: center;
   }
+  
+ 
+
+  .controls {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  
+  
+
+  #novoItem {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
   
   /* Estilo do input */
   input#novoItem {
@@ -56,5 +98,19 @@ body {
   
   ul#lista li:last-child {
     border-bottom: none;
+  }
+  
+  /* Quando a tela for pequena (até 480px), empilha os controles */
+@media (max-width: 480px) {
+    .controls {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .controls > input,
+    .controls > button,
+    .controls > select {
+      width: 100%;
+    }
   }
   
