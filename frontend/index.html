@@ -5,19 +5,21 @@
   <title>Minha Lista</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <body>
-    <h1>Minha Lista</h1>
-    <input type="text" id="novoItem" placeholder="Novo item" />
-    <button id="adicionarBtn">Adicionar</button>
-    <button id="excluirBtn">Excluir Selecionados</button>
-    <!-- Setinhas -->
-    <button id="moverCimaBtn">🔼</button>
-    <button id="moverBaixoBtn">🔽</button>
-    
-    <ul id="lista"></ul>
-    
-
-  <script src="script.js"></script>
-</body>
+    <div class="container">
+      <h1>Minha Lista</h1>
+      <div class="controls">
+        <input type="text" id="novoItem" placeholder="Novo item" />
+        <button id="adicionarBtn">Adicionar</button>
+        <button id="excluirBtn">Excluir Selecionados</button>
+        <button id="moverCimaBtn">🔼</button>
+        <button id="moverBaixoBtn">🔽</button>
+      </div>
+      <ul id="lista"></ul>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  
 </html>
